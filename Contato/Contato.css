@@ -1,0 +1,131 @@
+/*CSS Cor de Fundo*/
+body{
+    background: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*CSS do Main*/
+header{
+    background: #BBBBBB;
+    padding: 20px 0;
+}
+.cabeçalho{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #FFFF00;
+    font-size: 30px;
+}
+
+
+/*CSS do Main*/
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form{
+    margin: 40px 0;
+    color:#FFFFFF;
+}
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.inputPadrao{
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+.checkbox{
+    margin: 20px 0;
+}
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background: yellow;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+.enviar:hover{
+    background: orange;
+    transform: scale(1.2);
+}
+
+table{
+    color: #FFFFFF;
+    margin: 20px 40px;
+}
+thead{
+    font-weight: bold;
+    background: #BBBBBB;
+    color: #000000;
+}
+td, th{
+    border: 1px solid #FFFFFF;
+    padding: 15px 8px;
+}
+
+
+/*CSS do Footer*/
+footer{
+    text-align: center;
+    background: url("/Produtos/IMG\ -\ Produtos/bg.jpg");
+    padding: 40px 0;
+}
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-top: 20px; 
+}
+
+
+/*Css Mobile*/
+@media screen and (max-width: 480px){
+    .cabeçalho, main{
+         width: auto;
+         padding: 10%;
+    }
+    h1{
+     text-align: center;
+    }
+    nav{
+     position: static;
+     text-align: center;
+    }
+    form, .enviar{
+        width: 100%;
+    }
+    fieldset select{
+        font-size: 20px;
+    }
+    .inputPadrao{
+        width: 80%;
+    }
+}

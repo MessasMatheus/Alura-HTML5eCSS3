@@ -1,0 +1,116 @@
+/*CSS Cor da Pagina*/
+body{
+    background: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*CSS do Header*/
+header{
+    background: #BBBBBB;
+    padding: 20px 0;
+}
+.cabeçalho{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #FFFF00;
+    font-size: 30px;
+}
+
+
+/*CSS do Main*/
+.Produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.Produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 5px dashed #000000;
+    border-radius: 50px;
+    background-color: #FFFFFF;
+}
+.Produtos li:hover {
+    border-color: #FFFF00;
+    border-style: solid;
+}
+.Produtos li:active {
+    border-color: #000000;
+}
+.Produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.Produtos li:hover h2 {
+    font-size: 35px;
+}
+.Descrição-Produto {
+    font-size: 18px;
+}
+.Preço-Produto {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+
+/*CSS do Footer*/
+footer{
+    text-align: center;
+    background: url("/Produtos/IMG\ -\ Produtos/bg.jpg");
+    padding: 40px 0;
+}
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-top: 20px; 
+}
+
+
+/*Css Mobile*/
+@media screen and (max-width: 480px){
+    .cabeçalho, .Produtos{
+         width: auto;
+         padding: 10%;
+    }
+    h1{
+     text-align: center;
+    }
+    nav{
+     position: static;
+     text-align: center;
+    }
+    .ListaBenefícios, .ImgBeneficios, .Produtos li{
+         width: 100%;
+    }
+    .Produtos li{
+        display: block;
+    }
+ }
+ 
